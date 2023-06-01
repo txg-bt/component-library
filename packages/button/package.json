@@ -1,0 +1,19 @@
+{
+  "name": "txg-button",
+  "version": "1.0.0",
+  "description": "Button Component",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "author": "TXG",
+  "license": "MIT",
+  "dependencies": {
+    "prop-types": "^15.8.1"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "styled-components": "^5.3.10"
+  }
+}

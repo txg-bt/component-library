@@ -1,0 +1,24 @@
+{
+  "name": "root",
+  "private": true,
+  "npmClient": "yarn",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "lerna exec --parallel -- babel src -d dist --config-file ../../.babelrc",
+    "build:dev": "lerna exec --parallel -- babel src -d dist --config-file ../../.babelrc"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.15.8",
+    "@babel/core": "^7.15.5",
+    "@babel/preset-env": "^7.15.6",
+    "@babel/preset-react": "^7.14.5",
+    "lerna": "^6.6.1",
+    "prop-types": "^15.8.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-is": "^18.2.0",
+    "styled-components": "^5.3.10"
+  }
+}

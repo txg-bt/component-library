@@ -1,0 +1,17 @@
+{
+  "name": "txg-theme",
+  "version": "1.0.0",
+  "description": "Theme Config",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "author": "TXG",
+  "license": "MIT",
+  "dependencies": {
+
+  },
+  "peerDependencies": {
+
+  }
+}
