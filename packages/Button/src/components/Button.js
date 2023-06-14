@@ -4,30 +4,32 @@ import PropTypes from "prop-types";
 import { BUTTON_TYPE } from "../constants";
 import { StyledButton } from "../styled/Button.styled";
 
-function Button({ onClick, text, type, isActive, isDisabled }) {
+function Button({ onClick, children, type, isActive, isDisabled, ...others }) {
   return (
     <StyledButton
       {...(!isDisabled && { onClick: onClick })}
       type={type}
       isActive={isActive}
+      isDisabled={isDisabled}
+      {...others}
     >
-      {text}
+      {children}
     </StyledButton>
   );
 }
 
 Button.propTypes = {
   onClick: PropTypes.func.isRequired,
-  text: PropTypes.string.isRequired,
+  children: PropTypes.string.isRequired,
   type: PropTypes.string,
   isActive: PropTypes.bool,
-  isDisabled: PropTypes.bool,
+  isDisabled: PropTypes.bool
 };
 
 Button.defaultProps = {
   type: BUTTON_TYPE.primary,
   isActive: false,
-  isDisabled: false,
+  isDisabled: false
 };
 
 export default Button;

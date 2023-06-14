@@ -1,5 +1,5 @@
 {
-  "name": "txg-theme",
+  "name": "@txg/theme",
   "version": "1.0.0",
   "description": "Theme Config",
   "main": "dist/index.js",
